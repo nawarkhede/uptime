@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'uptime',
+    'django_cron',
+]
+
+CRON_CLASSES = [
+    "uptime.cron_test.MyCronJob",
 ]
 
 MIDDLEWARE = [
